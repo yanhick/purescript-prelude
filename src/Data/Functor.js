@@ -1,12 +1,18 @@
-"use strict";
+package data;
 
-exports.arrayMap = function (f) {
-  return function (arr) {
-    var l = arr.length;
-    var result = new Array(l);
-    for (var i = 0; i < l; i++) {
-      result[i] = f(arr[i]);
+class FunctorForeign {
+
+    public static function arrayMap (f) {
+        return [];
+
+      //return function (arr) {
+        //var l = arr.length;
+        //var result = new Array(l);
+        //for (var i = 0; i < l; i++) {
+          //result[i] = f(arr[i]);
+        //}
+        //return result;
+      //};
     }
-    return result;
-  };
-};
+
+}
