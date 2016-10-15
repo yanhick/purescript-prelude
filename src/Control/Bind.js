@@ -1,11 +1,16 @@
-"use strict";
+package control;
 
-exports.arrayBind = function (arr) {
-  return function (f) {
-    var result = [];
-    for (var i = 0, l = arr.length; i < l; i++) {
-      Array.prototype.push.apply(result, f(arr[i]));
+class BindForeign {
+
+    public static function arrayBind (arr) {
+        return [];
+      //return function (f) {
+        //var result = [];
+        //for (var i = 0, l = arr.length; i < l; i++) {
+          //Array.prototype.push.apply(result, f(arr[i]));
+        //}
+        //return result;
+      //};
     }
-    return result;
-  };
-};
+
+}
