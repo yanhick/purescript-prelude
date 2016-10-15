@@ -1,3 +1,10 @@
-"use strict";
+package data;
 
-exports.unit = {};
+class UnitForeign {
+
+    public static function unit () {
+        return {};
+    }
+
+}
+
