@@ -1,17 +1,22 @@
-"use strict";
+package data;
 
-exports.boolConj = function (b1) {
-  return function (b2) {
-    return b1 && b2;
-  };
-};
+class HeytingAlgebraForeign {
 
-exports.boolDisj = function (b1) {
-  return function (b2) {
-    return b1 || b2;
-  };
-};
+    public static function boolConj (b1) {
+      return function (b2) {
+        return b1 && b2;
+      };
+    }
 
-exports.boolNot = function (b) {
-  return !b;
-};
+    public static function boolDisj (b1) {
+      return function (b2) {
+        return b1 || b2;
+      };
+    }
+
+    public static function boolNot (b) {
+      return !b;
+
+    }
+}
+
