@@ -1,24 +1,27 @@
-"use strict";
+package data;
 
-exports.intDegree = function (x) {
-  return Math.abs(x);
-};
+class EuclidianRingForeign {
+    public static function intDegree (x) {
+      return Math.abs(x);
+    };
 
-exports.intDiv = function (x) {
-  return function (y) {
-    /* jshint bitwise: false */
-    return x / y | 0;
-  };
-};
+    public static function intDiv (x) {
+      return function (y) {
+        /* jshint bitwise: false */
+        return x / y | 0;
+      };
+    };
 
-exports.intMod = function (x) {
-  return function (y) {
-    return x % y;
-  };
-};
+    public static function intMod (x) {
+      return function (y) {
+        return x % y;
+      };
+    };
 
-exports.numDiv = function (n1) {
-  return function (n2) {
-    return n1 / n2;
-  };
-};
+    public static function numDiv (n1) {
+      return function (n2) {
+        return n1 / n2;
+      };
+    };
+
+}
