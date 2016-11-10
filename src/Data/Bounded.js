@@ -1,7 +1,20 @@
-"use strict";
+package data;
 
-exports.topInt = 2147483647;
-exports.bottomInt = -2147483648;
+class BoundedForeign {
+    public static function topInt () {
+        return 2147483647;
+    }
 
-exports.topChar = String.fromCharCode(65535);
-exports.bottomChar = String.fromCharCode(0);
+    public static function bottomInt () {
+        return -2147483648;
+    }
+
+    public static function topChar () {
+        return String.fromCharCode(65535);
+    }
+
+    public static function bottomChar () {
+        return String.fromCharCode(0);
+    }
+}
+
