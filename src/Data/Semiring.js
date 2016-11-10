@@ -1,27 +1,30 @@
-"use strict";
+package data;
 
-exports.intAdd = function (x) {
-  return function (y) {
-    /* jshint bitwise: false */
-    return x + y | 0;
-  };
-};
+class SemiringForeign {
+    public static function intAdd (x) {
+      return function (y) {
+        /* jshint bitwise: false */
+        return x + y | 0;
+      };
+    };
 
-exports.intMul = function (x) {
-  return function (y) {
-    /* jshint bitwise: false */
-    return x * y | 0;
-  };
-};
+    public static function intMul (x) {
+      return function (y) {
+        /* jshint bitwise: false */
+        return x * y | 0;
+      };
+    };
 
-exports.numAdd = function (n1) {
-  return function (n2) {
-    return n1 + n2;
-  };
-};
+    public static function numAdd (n1) {
+      return function (n2) {
+        return n1 + n2;
+      };
+    };
 
-exports.numMul = function (n1) {
-  return function (n2) {
-    return n1 * n2;
-  };
-};
+    public static function numMul (n1) {
+      return function (n2) {
+        return n1 * n2;
+      };
+    };
+}
+
